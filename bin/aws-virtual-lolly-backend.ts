@@ -4,7 +4,7 @@ import * as cdk from '@aws-cdk/core';
 import { AwsVirtualLollyBackendStack } from '../lib/aws-virtual-lolly-backend-stack';
 
 const app = new cdk.App();
-new AwsVirtualLollyBackendStack(app, 'AwsVirtualLollyBackendStack', {
+new AwsVirtualLollyBackendStack(app, 'VirtualLollyBackendStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
