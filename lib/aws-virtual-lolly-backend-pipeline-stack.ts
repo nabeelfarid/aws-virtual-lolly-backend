@@ -56,8 +56,8 @@ export class AwsVirtualLollyBackendPipelineStack extends cdk.Stack {
       }),
     });
 
-    // pipeline.addApplicationStage(
-    //   new AwsVirtualLollyBackendPipelineStage(this, "Deploy")
-    // );
+    pipeline.addApplicationStage(
+      new AwsVirtualLollyBackendPipelineStage(this, "Deploy")
+    );
   }
 }
